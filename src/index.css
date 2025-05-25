@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-sans bg-white text-neutral-900 dark:bg-primary-500 dark:text-white transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl leading-snug mb-8;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl leading-relaxed mb-6;
+  }
+  
+  p {
+    @apply text-base md:text-lg leading-relaxed text-neutral-700 dark:text-neutral-200;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-primary-500 dark:text-white mb-12 relative inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-3 left-0 w-16 h-1 bg-secondary-500;
+  }
+  
+  .nav-item {
+    @apply px-3 py-2 text-neutral-600 hover:text-primary-500 dark:text-neutral-200 dark:hover:text-secondary-500 transition-colors duration-300;
+  }
+  
+  .nav-item.active {
+    @apply text-primary-500 dark:text-secondary-500;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary-500 hover:bg-primary-600 text-white;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary-500 hover:bg-secondary-400 text-primary-800;
+  }
+  
+  .btn-outline {
+    @apply btn border-2 border-secondary-500 text-secondary-500 hover:bg-secondary-500 hover:text-primary-800;
+  }
+
+  .card {
+    @apply bg-white dark:bg-primary-600 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+
+  .skill-badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium bg-neutral-100 dark:bg-primary-700 text-primary-500 dark:text-secondary-500 inline-block m-1;
+  }
+
+  .project-link {
+    @apply inline-flex items-center text-secondary-500 hover:text-secondary-400 font-medium;
+  }
+
+  .highlight {
+    @apply text-secondary-500 dark:text-secondary-500 font-medium;
+  }
+
+  .social-icon {
+    @apply w-8 h-8 text-neutral-600 hover:text-secondary-500 dark:text-neutral-300 dark:hover:text-secondary-500 transition-colors duration-300;
+  }
+}
