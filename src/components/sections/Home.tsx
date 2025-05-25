@@ -81,12 +81,10 @@ const Home: React.FC = () => {
               <div className="absolute inset-0 bg-secondary-500 rounded-3xl -rotate-6 scale-95 opacity-20 dark:opacity-10"></div>
               <div className="absolute inset-0 bg-primary-500 dark:bg-secondary-500 rounded-3xl rotate-3 scale-95 opacity-20"></div>
               <div className="relative bg-white dark:bg-primary-600 p-8 rounded-3xl shadow-xl">
-                {/* <div className="aspect-square bg-neutral-100 dark:bg-primary-700 rounded-2xl flex items-center justify-center">
-                  <span className="text-7xl text-secondary-500">SC</span>
-                </div> */}
+               
                 <div className="aspect-square rounded-2xl overflow-hidden">
   <img
-    src="/mypic.jpg"  // <-- Update this to match your actual image filename
+    src="/mypic.jpg"  
     alt="Shriya Cheruvu"
     className="w-full h-full object-cover"
   />
