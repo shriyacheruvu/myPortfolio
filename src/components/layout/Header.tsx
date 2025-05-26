@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Sun, Moon, Menu, X, Github, Linkedin, User, Code, Award, BookOpen, Mail } from 'lucide-react';
+import { Sun, Moon, Menu, X, Github, Linkedin, User, Code, Award, BookOpen, Mail,Youtube } from 'lucide-react';
 import ThemeToggle from '../ui/ThemeToggle';
 
 const Header: React.FC = () => {
@@ -28,6 +28,7 @@ const Header: React.FC = () => {
   const navItems = [
     { name: 'Home', to: 'home', icon: <User size={18} /> },
     { name: 'About', to: 'about', icon: <User size={18} /> },
+    { name: 'Video Resume', to: 'video-resume', icon: <Youtube size={18} /> },
     { name: 'Projects', to: 'projects', icon: <Code size={18} /> },
     { name: 'Skills', to: 'skills', icon: <Code size={18} /> },
     { name: 'Certifications', to: 'certifications', icon: <Award size={18} /> },
