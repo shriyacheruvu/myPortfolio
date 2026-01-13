@@ -8,7 +8,7 @@ import Skills from './components/sections/Skills';
 import Certifications from './components/sections/Certifications';
 import Achievements from './components/sections/Achievements';
 import Contact from './components/sections/Contact';
-import VideoResume from './components/sections/VideoResume';
+//import VideoResume from './components/sections/VideoResume';
 
 function App() {
   // Update page title
@@ -22,7 +22,7 @@ function App() {
       <main className="flex-grow">
         <Home />
         <About />
-        <VideoResume />
+        {/* <VideoResume /> */}
         <Projects />
         <Skills />
         <Certifications />
