@@ -28,7 +28,7 @@ const Header: React.FC = () => {
   const navItems = [
     { name: 'Home', to: 'home', icon: <User size={18} /> },
     { name: 'About', to: 'about', icon: <User size={18} /> },
-    { name: 'Video Resume', to: 'video-resume', icon: <Youtube size={18} /> },
+    //{ name: 'Video Resume', to: 'video-resume', icon: <Youtube size={18} /> },
     { name: 'Projects', to: 'projects', icon: <Code size={18} /> },
     { name: 'Skills', to: 'skills', icon: <Code size={18} /> },
     { name: 'Certifications', to: 'certifications', icon: <Award size={18} /> },
