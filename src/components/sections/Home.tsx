@@ -48,6 +48,14 @@ const Home: React.FC = () => {
               >
                 Contact Me
               </Link>
+               <a
+                href="/22211A6725_Shriya.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary bg-primary-500 dark:bg-secondary-500 text-white dark:text-primary-800 hover:bg-primary-600 dark:hover:bg-secondary-400"
+                >
+              Resume
+              </a>
             </div>
             <div className="mt-10 flex space-x-6">
               <a 
